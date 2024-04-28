@@ -1,0 +1,107 @@
+.contact-popup{
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+     transition: top 0ms ease-in-out 300ms ;
+    transition: opacity 300ms ease-in-out;
+    transition: margin-top 300ms ease-in-out;
+}
+body{
+    transition: filter 0ms ease-in-out 0ms;
+
+}
+.submit-btn{
+    text-align: center;
+}
+.contact-popup .close-button{
+    position: absolute;
+    top: 7px;
+    right: 10px;
+    width: 30px;
+    height: 32px;
+    background: #eee;
+    color: #111;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+body.active-popup{
+    overflow: hidden;
+}
+.main{
+    transition: filter 0ms ease-in-out 300ms;
+
+}
+body.active-popup .main{
+    filter: blur(5px);
+    background: rgba(0,0,0,0.08);
+    transition: filter 0ms ease-in-out 0ms;
+}
+body.active-popup .contact-popup{
+    top: 50%;
+    opacity: 1;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms ;
+    transition: opacity 300ms ease-in-out;
+    transition: margin-top 300ms ease-in-out;
+
+}
+.pipe-line {
+    position: absolute;
+    background-color: grey; /* Change the color as needed */
+    width: 0.5px; /* Adjust the width of the vertical line */
+    height: 100%; /* Full height of the card */
+    left: 50%; /* Center the line */
+    transform: translateX(-50%); /* Center the line precisely */
+  }
+
+ /* for cities we work style */
+ .this {
+    width: 60%; 
+    margin: 0 auto; 
+    transition: opacity 1.5s ease-in-out;
+    text-align: center;
+    opacity: 0; /* Initially set opacity to 0 */
+  }
+
+  .effect:hover {
+    transform: scale(1.05);
+  }
+
+  .reveal {
+    opacity: 1; /* cities we work opacity */
+  }
+   /* style for what is session */
+   .session {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    text-align: center;
+    width: 100%;
+  }
+  .sessioncontainer {   
+    width: 100%;
+    overflow: hidden;
+    padding: 35px;
+    position: relative;
+  }
+  .sessionslide {
+      transition: transform 1s; 
+      transition-timing-function: ease-out;
+  }
+  @media(max-width: 800px){
+  .sessionslide.swiper-slide-active {
+     transform: scale(1.06); 
+  }
+  }
+  .swiper-pagination {
+    position: relative;
+  }

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Test</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        .interiorcard {
+            border: none;
+            text-align: center;
+            cursor: pointer;
+            padding: 2px;
+        }
+
+        .interiorcard img {
+            height: 200px;
+        }
+
+        .interiorcard:hover {
+            box-shadow: 2px 2px 7px 5px black;
+            transform: scale(0.9);
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        @media (min-width: 768px) {
+            /* For screens larger than 768px (medium size and above) */
+            .modal-content {
+                width: 80vw; /* Adjust the width as needed */
+                height: 86vh;
+                max-width: none;
+                margin-left: -23.5vw; /* Center the modal */
+                margin-right: -65.5vw;
+            }
+
+            .modal-content .modal-body {
+                display: flex;
+            }
+
+            .img-container {
+                flex: 5;
+            }
+
+            .img-container img {
+                height: 74.4vh !important;
+                width: 76% !important;
+                object-fit: cover;
+            }
+
+            .modal-content .modal-body .additional-content {
+                flex: 1;
+                margin-left: -250px; /* Adjust the left margin as needed */
+                padding: 2px;
+            }
+            .extracard img{
+                width: 105%;
+                height: 70px;
+            }
+            .sessbutt{
+                margin-left: 18px;
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            /* For screens smaller than 768px (mobile size) */
+            .modal-content {
+                width: 99%;
+                height: 116vh;
+            }
+
+            .modal-content .modal-body {
+                flex-direction: column;
+            }
+
+            .img-container img {
+                height: 50vh !important;
+                width: 100% !important;
+            }
+
+            .modal-content .modal-body .img-container,
+            .modal-content .modal-body .additional-content {
+                width: 100%; /* Take full width on mobile */
+                margin-left: 0; /* Remove left margin on mobile */
+            }
+            .extracard img{
+                width: 105%;
+                height: 70px;
+            }
+            .sessbutt{
+                margin-left: 78px;
+                width: 180px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- the residential interior works (cards) start here -->
+    <h2 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Residential
+        (Interior)</h2>
+
+    <h6 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Quod illum maxime laudantium quisquam tenetur, neque eligendi ut
+        molestias exercitationem, animi nobis!</h6>
+    <br>
+
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="interiorcard" id="card1" onclick="showCardModal('card1')">
+                <img src="https://cdn.pixabay.com/photo/2016/06/24/10/47/house-1477041_1280.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Modular Kitchen</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div> 
+
+        <div class="col">
+            <div class="interiorcard" id="card2" onclick="showCardModal('card2')">
+                <img src="https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg" class="card-img-top"
+                    alt="errr">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add more card sections here -->
+    </div>
+    <br>
+
+    <!-- Dynamic Modals -->
+    <div id="cardModals"></div>
+
+    <!-- Add Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            function showCardModal(cardId) {
+                const card = document.getElementById(cardId);
+        
+                if (card) {
+                    const cardImageSrc = card.querySelector('.card-img-top').src;
+        
+                    const modalContent = `
+                        <div class="modal fade" id="${cardId}Modal" tabindex="-1" aria-labelledby="${cardId}ModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header mb-0" style="height: 45px;">
+                                        <h5 class="modal-title" id="${cardId}ModalLabel">Modular Kitchen</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Image Container -->
+                                        <div class="img-container">
+                                            <img src="${cardImageSrc}" class="img-fluid custom-modal-image" alt="Card Image">
+                                        </div>
+                                        <div class="additional-content">
+                                            <h6 class="mt-1">Related Images</h6>
+                                            <!-- Image Card in the Additional Content -->
+                                            <div class="card extracard"  onclick="showImageInModal(event)">
+                                              <div class= "row row-cols-3 row-cols-md-2 g-0">
+                                                <div class="card-body col-6">
+                                                    <img id="add" src="https://static.wixstatic.com/media/bf8702_b09748a16a2540c595aa74c2ead3c4f1~mv2.jpg/v1/fill/w_801,h_553,al_c,q_85,enc_auto/bf8702_b09748a16a2540c595aa74c2ead3c4f1~mv2.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://images.livspace-cdn.com/plain/https://jumanji.livspace-cdn.com/magazine/wp-content/uploads/sites/2/2023/06/29194431/interior-design-cost-chennai-living-room-temple.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://keyvendors.com/blogs/wp-content/uploads/2023/06/living-room-3-bhk-flat-interior-design-1024x602.png" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://3.imimg.com/data3/ON/BL/MY-15636581/commercial-interior-designing-service-500x500.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://i.ytimg.com/vi/jz2mL0ortEE/maxresdefault.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://depanache.in/depanache-ui/uploads/2022/06/small-duplex-house-interior-ideas.webp" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://cdn-bfjff.nitrocdn.com/kNwwmBsCvqcqjIkxbJpCzNztGfZMKUHO/assets/static/optimized/rev-674439d/wp-content/uploads/2021/02/Living-room-Head-1024x568.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                                <div class="card-body">
+                                                    <img id="add" src="https://cityfurnish.com/blog/wp-content/uploads/2023/06/tropical-interior-design-living-room-min.jpg" class="img-fluid additional-image" alt="Additional Image">
+                                                </div>
+                                               </div>
+                                            </div>
+                                                <div>
+                                                <button type="button" class="btn btn-dark mt-2 sessbutt">Book Design Session</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+        
+                    // Remove any existing modals
+                    $('#cardModals').children().remove();
+        
+                    // Append the modal to the container
+                    $('#cardModals').append(modalContent);
+        
+                    // Show the modal
+                    $(`#${cardId}Modal`).modal('show');
+                } else {
+                    console.error(`Card with ID '${cardId}' not found.`);
+                }
+            }
+        
+            function showImageInModal(event) {
+                // Update the source of the existing modal image
+                const modalImage = document.querySelector('.modal.show .img-container img');
+                if(event.target.id=="add"){
+                const imageSrc = event.target.src
+                console.log(imageSrc);
+                if (modalImage) {
+                    modalImage.src = imageSrc;
+                }
+                }
+        
+                // Show the existing modal
+                $('.modal.show').modal('show');
+            }
+        </script>
+        
+
+</body>
+
+</html>
