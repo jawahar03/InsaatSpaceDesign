@@ -9,6 +9,38 @@
         <link id="link"   rel="shortcut icon" href="/img/logo.jpeg" type="image/x-icon">
     <title>Residential(insaat)</title>
     <style>
+        .navbar{
+            /* padding-top: 0rem; */
+            /* padding-bottom: 0rem; */
+            padding-right: 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+
+
+         #logotag{
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+          animation: moveText 6s ;
+          position: absolute;
+          top:30%;
+         margin-left: 65px;
+}
+        @keyframes moveText {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 4%; /* Move text out to the right */
+  }
+  100% {
+    left: 0.9%; /* Move text back to the left */
+  }
+}
+
+.hide{
+  display: none;
+}
         .interiorcard {
             text-align: center;
             cursor: pointer;
@@ -383,7 +415,6 @@ form {
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
-    
     </style>
 </head>
 
@@ -394,7 +425,7 @@ form {
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-              <img src="img/logo.jpeg" alt="logo" width="55" height="50" class="logo  d-inline-block align-top" style="border-radius: 480px;"> 
+              <img src="img/logo.jpeg" alt="logo" width="53" height="55" class="logo  d-inline-block align-top" style="border-radius: 480px;"> 
              <p id="logotag">Insaat Space Design</p>
                 <!-- <span class="d-inline-block align-middle">INSAAT</span> -->
             </a>
@@ -438,7 +469,7 @@ form {
            <div class="carousel-caption d-none d-md-block" style="color: black;">
                
             <h5>Residential</h5>
-            <p id="resinterior">Some representative placeholder content for the first slide.</p>
+           
           </div>
         </div>
         
@@ -453,9 +484,7 @@ form {
     <h2 id="targetrow1" class="mt-3" style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Residential
         (Interior)</h2>
 
-    <h6  style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Quod illum maxime laudantium quisquam tenetur, neque eligendi ut
-        molestias exercitationem, animi nobis!</h6>
+    
     <br>
 
     <div  class="row row-cols-2 row-cols-md-4 g-4">
@@ -573,9 +602,9 @@ form {
         <div class="col-md-3 col-6 mb-4">
           <div class="image-container">
             <img src="https://img.freepik.com/premium-photo/modern-luxury-home-architects-villa-exterior-design-picture-ai-generated-art_848903-2703.jpg" alt="Image 1" class="img-fluid">
-            <div class="image-caption-heading"><h4>Title heading</h4></div>
-            <div class="image-caption"><h3>Title heading</h3>
-            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+            <div class="image-caption-heading"></div>
+            <div class="image-caption">
+            
             <div id="subbut">
                 <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                 </div>
@@ -586,9 +615,9 @@ form {
         <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://media.istockphoto.com/id/589538090/photo/exterior-of-small-american-house-with-blue-paint.jpg?s=612x612&w=0&k=20&c=bg1x9nUvyhBRtWpuETh-2NDnSOzehq6OsxU5dAE_1bc=" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+              
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -599,9 +628,9 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://dogk5k0c5kg4s.cloudfront.net/web/images/articles/image_2021-08-05-191341.jpeg?mtime=20210805151342&focal=none" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p style="line-height: 34px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+              
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -612,9 +641,10 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://static.asianpaints.com/content/dam/asianpaintsbeautifulhomes/202209/20-exterior-house-designs/title-exterior-house-design.jpg" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading">
+            </div>
+              <div class="image-caption">
+             
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -625,9 +655,9 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://patch.com/img/cdn/users/3437632/stock/raw/20150755a3d492116fb.jpg" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+              
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -638,9 +668,9 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://www.futuristarchitecture.com/wp-content/uploads/2022/04/entrance-to-a-small-private-house.jpg" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+              
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -651,9 +681,9 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://tonearme.com/images/thumbs/000/0001521_Simple%20House%20Designs%20%C3%A2%E2%82%AC%E2%80%9C%20Exterior%20Designs%20for%20Your%20Home_1350.jpeg" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+             
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
@@ -664,9 +694,9 @@ form {
           <div class="col-md-3 col-6 mb-4">
             <div class="image-container">
               <img src="https://i.pinimg.com/736x/78/94/a9/7894a903123be589a588978eaf478c63.jpg" alt="Image 1" class="img-fluid">
-              <div class="image-caption-heading"><h4>Title heading</h4></div>
-              <div class="image-caption"><h3>Title heading</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sapiente nemo cupiditate veniam beatae provident pariatur sunt laudantium. Earum, aperiam.</p>
+              <div class="image-caption-heading"></div>
+              <div class="image-caption">
+              
               <div id="subbut">
                   <button type="button" class="btn btn-dark mt-2" onclick="openContactPopup(event,imageModal)">Book Design Session</button>
                   </div>
