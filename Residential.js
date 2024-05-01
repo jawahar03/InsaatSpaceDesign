@@ -24,7 +24,7 @@ function showCardModal1(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="/Residential/kitchen/IMG_9920.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="https://assets-news.housing.com/news/wp-content/uploads/2020/04/22184310/Check-out-these-duplex-interior-design-ideas-FB-1200x700-compressed.jpg" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
                                         <img id="add" src="/Residential/kitchen/IMG_9922.JPG" class="img-fluid additional-image" alt="Additional Image">
@@ -66,11 +66,9 @@ function showCardModal1(cardId) {
         $('#cardModals').append(modalContent);
 
         // Show the modal
-        $('#${cardId}Modal').modal('show');
+        $(`#${cardId}Modal`).modal('show');
     } 
-    else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+   
 }
 
 function showCardModal2(cardId) {
@@ -84,7 +82,7 @@ function showCardModal2(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Wardrobe</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -98,31 +96,33 @@ function showCardModal2(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/wardrobe/IMG_0697.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_0697.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_0709.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_0709.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_1499.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_1499.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_2393.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_2393.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_3061.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_3061.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_3043.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_3043.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_3078.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_3078.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/wardrobe/IMG_3758.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/wardrobe/IMG_3758.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
+
+                                
                                     <div id="subbut">
                                     <button type="button" class="btn btn-dark mt-2 sessbutt" onclick="openContactPopup(event,card2Modal)">Book Design Session</button>
                                     </div>
@@ -141,9 +141,7 @@ function showCardModal2(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 function showCardModal3(cardId) {
@@ -157,7 +155,7 @@ function showCardModal3(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Pooja Room</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -171,28 +169,28 @@ function showCardModal3(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/poojaroom/IMG_1285.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/poojaroom/IMG_1285.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_3084.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_3084.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_0832.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_0832.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_3066.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_3066.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_1904.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_1904.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_3769.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_3769.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_1903.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_1903.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/poojaroom/IMG_3065.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"  src="/Residential/poojaroom/IMG_3065.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -214,9 +212,7 @@ function showCardModal3(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 function showCardModal4(cardId) {
@@ -230,7 +226,7 @@ function showCardModal4(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Tv Unit</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -244,28 +240,28 @@ function showCardModal4(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/tvunit/IMG_4555.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_4555.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_3085.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_3085.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_3083.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_3083.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_3054.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_3054.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_2692.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_2692.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_9924.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_9924.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_1910.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_1910.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/tvunit/IMG_9923.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/tvunit/IMG_9923.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -287,9 +283,7 @@ function showCardModal4(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 function showCardModal5(cardId) {
@@ -303,7 +297,7 @@ function showCardModal5(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Living Room</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -317,28 +311,28 @@ function showCardModal5(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/livingroom/IMG_1906.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_1906.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_0283.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_0283.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_1291.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_1291.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_1508.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_1508.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_2392.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_2392.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_2699.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"src="/Residential/livingroom/IMG_2699.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_3765.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_3765.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/livingroom/IMG_9914.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/livingroom/IMG_9914.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -360,9 +354,7 @@ function showCardModal5(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 function showCardModal6(cardId) {
@@ -376,7 +368,7 @@ function showCardModal6(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">False Ceiling</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -390,28 +382,28 @@ function showCardModal6(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/falseceiling/IMG_0696.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_0696.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_1529.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_1529.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_3317.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_3317.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_8411.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_8411.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_3322.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_3322.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_8494.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_8494.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_8624.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_8624.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/falseceiling/IMG_2635.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/falseceiling/IMG_2635.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -433,9 +425,7 @@ function showCardModal6(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 function showCardModal7(cardId) {
@@ -449,7 +439,7 @@ function showCardModal7(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Study Table</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -463,28 +453,28 @@ function showCardModal7(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/studytable/IMG_0937.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0937.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0938.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0938.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0939.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add"src="/Residential/studytable/IMG_0939.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0940.JPG"" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0940.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0941.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0941.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_3048.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_3048.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0942.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0942.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/studytable/IMG_0936.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/studytable/IMG_0936.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -506,8 +496,6 @@ function showCardModal7(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
     }
 }
 
@@ -522,7 +510,7 @@ function showCardModal8(cardId) {
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content resint">
                         <div class="modal-header mb-0" style="height: 45px;">
-                            <h5 class="modal-title" id="${cardId}ModalLabel">Title Card</h5>
+                            <h5 class="modal-title" id="${cardId}ModalLabel">Bed Room</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body resintbod">
@@ -536,28 +524,28 @@ function showCardModal8(cardId) {
                                 <div class="card extracard"  onclick="showImageInModal(event)">
                                   <div class= "row row-cols-3 row-cols-md-2 g-0">
                                     <div class="card-body col-6">
-                                        <img id="add" src="Residential/bedroom/IMG_1913.jpeg" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_1913.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_1914.jpeg" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_1914.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_2693.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_2693.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_2694.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_2694.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_2697.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_2697.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_2704.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_2704.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_3759.JPG" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_3759.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                     <div class="card-body">
-                                        <img id="add" src="Residential/bedroom/IMG_1915.jpeg" class="img-fluid additional-image" alt="Additional Image">
+                                        <img id="add" src="/Residential/bedroom/IMG_1915.JPG" class="img-fluid additional-image" alt="Additional Image">
                                     </div>
                                    </div>
                                 </div>
@@ -579,9 +567,7 @@ function showCardModal8(cardId) {
 
         // Show the modal
         $(`#${cardId}Modal`).modal('show');
-    } else {
-        console.error(`Card with ID '${cardId}' not found.`);
-    }
+    } 
 }
 
 
@@ -598,6 +584,7 @@ function showImageInModal(event) {
     // Show the existing modal
     $('.modal.show').modal('show');
 }
+
 
 //residential exterior starts here
 document.addEventListener('DOMContentLoaded', function () {

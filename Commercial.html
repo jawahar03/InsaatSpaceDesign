@@ -10,11 +10,25 @@
     <title>Insaat (Commercial Page)</title>
     
     <style>
-       * {
+       /* * {
               padding: 0;
               margin: 0;
               box-sizing: border-box;
-          }
+          } */
+          .navbar{
+            /* padding-top: 0rem; */
+            /* padding-bottom: 0rem; */
+            padding-right: 2rem;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #logotag{
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+          animation: moveText 6s ;
+          position: absolute;
+          top:30%;
+         margin-left: 65px;
+        }
   
           body {
               background-color: #fff;
@@ -192,45 +206,42 @@
 <body>
      <!-- First nav bar  -->
      <div class="main" id="Backtotop">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="img/logo.jpeg" alt="logo" width="55" height="50" class="logo  d-inline-block align-top" style="border-radius: 480px;"> 
-            <p id="logotag">Insaat Space Design</p> 
-              <!-- <span class="d-inline-block align-middle">INSAAT</span> -->
-          </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content:right;">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html" style="color: #F0E3D1;"> <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</span></a>
-            </li>
-
-            <div class="dropdown">
-              <button class="nav-link active dropdown-toggle" style="background-color: black; margin: 0;border: none; color: white;" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-                <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Design lobby</span>
-              </button>
-              <ul class="dropdown-menu" style="margin-top: 18px;color: white; " >
-                <li><a class="dropdown-item" href="Residential.html"><h6>Residential</h6></a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="Commercial.html"><h6>Commercial</h6></a></li>
-              </ul>
-            </li> 
-            </div>
-           
-          
-            <li class="nav-item">
-              <a class="nav-link active" href="#" style="color: #F0E3D1;" onclick="openContactPopup(event)"> <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Contact</span></a>
-            </li>
-          </ul>
-          
-        </div>
-        
-  </div>
-</nav>
-
+      <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: black;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.jpeg" alt="logo" width="53" height="55" class="logo  d-inline-block align-top" style="border-radius: 480px;"> 
+             <p id="logotag">Insaat Space Design</p>
+                <!-- <span class="d-inline-block align-middle">INSAAT</span> -->
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content:right;">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: #F0E3D1;"> <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Home</span></a>
+              </li>
+  
+              <div class="dropdown">
+                <button class="nav-link active dropdown-toggle" style="background-color: black; margin: 0;border: none; color: white;" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                  <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Design lobby</span>
+                </button>
+                <ul class="dropdown-menu" style="margin-top: 18px;color: white; " >
+                  <li><a class="dropdown-item" href="Residential.html"><h6>Residential</h6></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Commercial.html"><h6>Commercial</h6></a></li>
+                </ul>
+              </li> 
+              </div>
+             
+            
+              <li class="nav-item">
+                <a class="nav-link active" href="#" style="color: #F0E3D1;" onclick="openContactPopup(event)"> <span style="font-size: 18px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">Contact</span></a>
+              </li>
+            </ul>
+          </div>
+    </div>
+  </nav>
 <br>
 <!-- commerical exterior starts here -->
 <div class="container py-1">
@@ -248,7 +259,7 @@
             <div class="card">
                 <img src="Commercial/IMG_9991.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card Title</h5>
+                    <h5 class="card-title">Real Estate Office</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque amet porro omnis quisquam expedita voluptatum ratione, nisi nostrum at eveniet.</p>
@@ -261,7 +272,7 @@
             <div class="card">
                 <img src="Commercial/IMG_9992.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card Title</h5>
+                    <h5 class="card-title">Real Estate Office</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
                   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque amet porro omnis quisquam expedita voluptatum ratione, nisi nostrum at eveniet.</p>
@@ -287,7 +298,7 @@
             <div class="card">
                 <img src="Commercial/IMG_4942.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Saloo</h5>
+                    <h5 class="card-title">Saloon</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
                   <p>Where Glamour Meets Relaxation: Experience the Magic of Our Salon's Ambiance</p>
@@ -313,7 +324,7 @@
             <div class="card">
                 <img src="Commercial/IMG_8635.JPG" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Sloon</h5>
+                    <h5 class="card-title">Saloon</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
                   <p>Where Beauty Knows No Bounds: Visit Our Exclusive Salon for an Unforgettable Experience</p>
