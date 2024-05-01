@@ -205,3 +205,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
   observer3.observe(startAutoSwipeElement3);
 });
+
+// js for what we do in insaat 3rd slide
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper3 = new Swiper('.fourthone', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      centeredSlides: true,
+      pagination: {
+          el: '.swiper-pagination-3',
+          clickable: true,
+      },
+      breakpoints: {
+          915: {
+              slidesPerView: 5,
+              centeredSlides: false,
+              spaceBetween: 16
+          }
+      }
+  });
+
+  // js for what we do in insaat auto-swipe feature
+  const startAutoSwipeElement3 = document.getElementById('startAutoSwipe3');
+
+  const observer3 = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              // Start auto-sliding after a 5-second delay
+              setTimeout(() => {
+                  swiper3.autoplay.start();
+              }, 4000);
+
+              // Stop observing once it starts
+              observer3.disconnect();
+          }
+      });
+  }, { threshold: 0.5 });
+
+  observer3.observe(startAutoSwipeElement3);
+});
