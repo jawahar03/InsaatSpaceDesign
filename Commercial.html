@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link id="link"   rel="shortcut icon" href="/img/logo.jpeg" type="image/x-icon">
+    <link id="link"   rel="shortcut icon" href="img/insaat.jpg" type="image/x-icon">
 
    
     <title>Insaat (Commercial Page)</title>
@@ -28,7 +28,18 @@
           position: absolute;
           top:30%;
          margin-left: 65px;
-        }
+}
+@keyframes moveText {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 4%; /* Move text out to the right */
+  }
+  100% {
+    left: 0.9%; /* Move text back to the left */
+  }
+}
   
           body {
               background-color: #fff;
@@ -250,9 +261,6 @@
 
     <br>
 
-<h6 style="text-align: center; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Lorem
-    ipsum dolor sit amet consectetur adipisicing elit. Quod illum maxime laudantium quisquam tenetur, neque eligendi ut
-    molestias exercitationem, animi nobis!</h6>
     <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
 
         <div class="col">
@@ -262,7 +270,7 @@
                     <h5 class="card-title">Real Estate Office</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque amet porro omnis quisquam expedita voluptatum ratione, nisi nostrum at eveniet.</p>
+                    <p>Welcome to a world of style and Comfort: Discover the sophisticated interior Design of Our Real Estate Office</p>
                     <button onclick="openContactPopup(event)" class="btn btn-primary mt-3">Book a Design Session</button>
                 </div>
             </div>
@@ -275,7 +283,7 @@
                     <h5 class="card-title">Real Estate Office</h5>
                 </div>
                 <div class="mb-1 d-flex justify-content-around caption">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque amet porro omnis quisquam expedita voluptatum ratione, nisi nostrum at eveniet.</p>
+                  <p>Inspiring confidence, Building Relationship: Experience the professionalism of Our interior Design</p>
                   <button onclick="openContactPopup(event)" class="btn btn-primary mt-3">Book a Design Session</button>
               </div>
             </div>
@@ -385,13 +393,18 @@
   
   
   <!-- the end starts here bro ! -->
-  <nav class="navbarend navbar-dark bg-dark" style="background-color: #F0E3D1; ">
+<nav class="navbarend navbar-dark bg-dark" style="background-color: #F0E3D1; ">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
-      <img src="https://cdn-icons-png.flaticon.com/128/4614/4614488.png" alt="" width="30" height="24" class="d-inline-block align-text">
+      <img src="https://cdn-icons-png.flaticon.com/128/4614/4614488.png" alt="" width="30" height="24" class="d-inline-block align-text" >
       Insaat
     </a>
   
+  <!-- mail-->
+  <a class="navbar-brand" href="www.insaatspacedesign@gmail.com">
+    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968534.png" alt="" width="30" height="25" class="d-inline-block align-text" style="border: 1px solid white; border-radius: 50%; padding: 1px;" >
+    
+  </a>
     
   <!-- instagram -->
     <a class="navbar-brand" href="https://www.instagram.com/insaat_space_design?igsh=Y3pveDFtNmpvNDl5">
@@ -410,10 +423,6 @@
     </a>
   </div>
   </nav>
-  
-  
-  
-  
   
   <div class="row row-cols-2 row-cols-md-4 row-cols-lg-4 g-4" id="colend" >
     <div class="col" id="colend">
@@ -482,6 +491,7 @@
       
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="Commercial.js"></script>
+
 
 </body>
 </html>
